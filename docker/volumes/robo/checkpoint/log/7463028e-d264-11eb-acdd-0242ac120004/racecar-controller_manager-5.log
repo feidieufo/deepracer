@@ -1,0 +1,42 @@
+[rospy.client][INFO] 2021-06-21 07:44:09,370: init_node, name[/racecar/controller_manager], pid[1288]
+[xmlrpc][INFO] 2021-06-21 07:44:09,371: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2021-06-21 07:44:09,371: Started XML-RPC server [http://c0cf3ac15434:33085/]
+[rospy.init][INFO] 2021-06-21 07:44:09,371: ROS Slave URI: [http://c0cf3ac15434:33085/]
+[rospy.impl.masterslave][INFO] 2021-06-21 07:44:09,371: _ready: http://c0cf3ac15434:33085/
+[rospy.registration][INFO] 2021-06-21 07:44:09,372: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2021-06-21 07:44:09,372: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2021-06-21 07:44:09,471: registered with master
+[rospy.rosout][INFO] 2021-06-21 07:44:09,472: initializing /rosout core topic
+[rospy.rosout][INFO] 2021-06-21 07:44:09,476: connected to core topic /rosout
+[rospy.simtime][INFO] 2021-06-21 07:44:09,492: initializing /clock core topic
+[rospy.simtime][INFO] 2021-06-21 07:44:09,494: connected to core topic /clock
+[rosout][INFO] 2021-06-21 07:44:09,497: Controller Spawner: Waiting for service controller_manager/load_controller
+[rospy.internal][INFO] 2021-06-21 07:44:09,537: topic[/clock] adding connection to [http://c0cf3ac15434:33597/], count 0
+[rospy.internal][INFO] 2021-06-21 07:44:09,631: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2021-06-21 07:44:10,102: Controller Spawner: Waiting for service controller_manager/switch_controller
+[rosout][INFO] 2021-06-21 07:44:10,103: Controller Spawner: Waiting for service controller_manager/unload_controller
+[rosout][INFO] 2021-06-21 07:44:10,105: Loading controller: left_rear_wheel_velocity_controller
+[rosout][INFO] 2021-06-21 07:44:10,146: Loading controller: right_rear_wheel_velocity_controller
+[rosout][INFO] 2021-06-21 07:44:10,194: Loading controller: left_front_wheel_velocity_controller
+[rosout][INFO] 2021-06-21 07:44:10,293: Loading controller: right_front_wheel_velocity_controller
+[rosout][INFO] 2021-06-21 07:44:10,363: Loading controller: left_steering_hinge_position_controller
+[rosout][INFO] 2021-06-21 07:44:10,433: Loading controller: right_steering_hinge_position_controller
+[rosout][INFO] 2021-06-21 07:44:10,495: Loading controller: joint_state_controller
+[rosout][INFO] 2021-06-21 07:44:10,514: Controller Spawner: Loaded controllers: left_rear_wheel_velocity_controller, right_rear_wheel_velocity_controller, left_front_wheel_velocity_controller, right_front_wheel_velocity_controller, left_steering_hinge_position_controller, right_steering_hinge_position_controller, joint_state_controller
+[rosout][INFO] 2021-06-21 07:44:10,517: Started controllers: left_rear_wheel_velocity_controller, right_rear_wheel_velocity_controller, left_front_wheel_velocity_controller, right_front_wheel_velocity_controller, left_steering_hinge_position_controller, right_steering_hinge_position_controller, joint_state_controller
+[rospy.core][INFO] 2021-06-21 07:54:27,947: signal_shutdown [signal-2]
+[rosout][INFO] 2021-06-21 07:54:27,948: Shutting down spawner. Stopping and unloading controllers...
+[rosout][INFO] 2021-06-21 07:54:27,948: Stopping all controllers...
+[rospy.core][INFO] 2021-06-21 07:54:42,976: signal_shutdown [signal-15]
+[rospy.internal][ERROR] 2021-06-21 07:54:42,978: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 729, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 103, in recv_buff
+    d = sock.recv(buff_size)
+error: [Errno 4] Interrupted system call
+
+[rosout][WARNING] 2021-06-21 07:54:42,978: Controller Spawner error while taking down controllers: transport error completing service call: receive_once[/racecar/controller_manager/switch_controller]: unexpected error [Errno 4] Interrupted system call
+[rospy.internal][INFO] 2021-06-21 07:54:42,991: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2021-06-21 07:54:42,993: topic[/clock] removing connection to http://c0cf3ac15434:33597/
+[rospy.impl.masterslave][INFO] 2021-06-21 07:54:42,995: signal-2
+[rospy.core][INFO] 2021-06-21 07:54:43,127: signal_shutdown [atexit]
